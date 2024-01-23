@@ -6,19 +6,19 @@ public class CharacterChangeBtn : MonoBehaviour
 {
 
     [SerializeField] private GameObject CharacterCUI;
-    // Start is called before the first frame update
+ 
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
     }
 
-    public void CharacterChangeUI()
+    public void CharacterChangeUI()//MainScene Character btn click : UI pops up
     {
         CharacterCUI.SetActive(true);
     }

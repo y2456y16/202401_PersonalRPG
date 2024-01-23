@@ -19,7 +19,7 @@ public class MainCameraObjectController : MonoBehaviour
     Vector3 PlayerPos;
     
 
-    private void Update()
+    private void Update()//MainCamera follows Player object
     {
         PlayerPos = new Vector3(
             Player.transform.position.x + setX,

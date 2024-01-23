@@ -22,7 +22,7 @@ public class GameManager : XY_CharacterController
     [SerializeField] private GameObject Player;
 
 
-    private void Awake()
+    private void Awake()//StartScene -> MainScene : charactertype input
     {
         I = this;
 
@@ -48,13 +48,14 @@ public class GameManager : XY_CharacterController
         }
     }
 
-    public void ChangeCharacter(int number)
+    public void ChangeCharacter(int number)//MainScene character change algorithm
     {
         switch (number)
         {
             case 1:
                 CharacterSelect = CharacterType.hero;
                 Player.transform.Find("CharacterSprite").GetComponent<SpriteRenderer>().sprite = PlayerJob1;
+                Player.transform.Find("CharacterSprite").GetComponent<Transform>().localScale = new Vector3(4.2f, 4.2f, 1);
                 Player.transform.Find("CharacterSprite").GetComponent<Animator>().runtimeAnimatorController = PlayerAni1;
                 break;
             case 2:

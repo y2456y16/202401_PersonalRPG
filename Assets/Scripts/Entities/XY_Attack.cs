@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class XY_Attack : MonoBehaviour
+public class XY_Attack : MonoBehaviour //not completed
 {
     private XY_CharacterController _controller;
 
@@ -15,7 +15,8 @@ public class XY_Attack : MonoBehaviour
     {
         _controller = GetComponent<XY_CharacterController>();
     }
-    // Start is called before the first frame update
+    
+
     void Start()
     {
         _controller.AttackEvent += OnShoot;
@@ -34,10 +35,9 @@ public class XY_Attack : MonoBehaviour
 
     private void CreateProjectile()
     {
-        Instantiate(testPrefab, projectileSpawnPosition.position, Quaternion.identity);
+        //Instantiate(testPrefab, projectileSpawnPosition.position, Quaternion.identity);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

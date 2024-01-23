@@ -15,23 +15,19 @@ public class CharacterSelect : MonoBehaviour
 
     public int selection = 0;
 
-    // Start is called before the first frame update
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         
     }
-    public void LayerSet()
-    {
-        
-    }
 
-    public void CharacterSelection()
+    public void CharacterSelection()//StartScene : character select
     {
         string strSelection = tag.ToString();
         if (tag == "Character1")

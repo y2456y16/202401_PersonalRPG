@@ -17,7 +17,7 @@ public class XY_CharacterName : XY_CharacterController
     }
 
 
-    void LoadNameData()
+    void LoadNameData()//get name text from data(saved by StartScene)
     {
         CharacterName.text = PlayerPrefs.GetString("Name");
     }

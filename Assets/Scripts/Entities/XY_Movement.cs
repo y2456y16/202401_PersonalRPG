@@ -7,7 +7,7 @@ public class XY_Movement : MonoBehaviour
 
     private XY_CharacterController _controller;
 
-    private Vector2 _movementDirection = Vector2.zero;
+    private Vector2 _movementDirection = Vector2.zero;//√ ±‚»≠
     private Rigidbody2D _rigidbody;
 
     

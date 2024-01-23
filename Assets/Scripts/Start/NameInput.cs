@@ -23,13 +23,13 @@ public class NameInput : MonoBehaviour
         
     }
 
-    public void OnClickJoin()
+    public void OnClickJoin()//StartScene : name input, with condition text 3~9
     {
         if(!(2< InputName.text.Length && InputName.text.Length <10))
         {
             return;
         }
-        else
+        else //transfer name text to MainScene
         {
             SaveData();
             SceneManager.LoadScene("MainScene");

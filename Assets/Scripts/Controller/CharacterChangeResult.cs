@@ -22,7 +22,7 @@ public class CharacterChangeResult : MonoBehaviour
         
     }
 
-    public void CharacterChange()
+    public void CharacterChange()//MainScene : CharacterChange button click
     {
         string strSelection = tag.ToString();
         if (tag == "Character1")
