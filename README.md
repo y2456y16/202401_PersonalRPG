@@ -60,8 +60,7 @@
 		CharacterChangeBtn : 메인화면 캐릭터 변경 버튼
 		CharacterChnageResult : 메인화면 캐릭터 변경 -> 캐릭터 선택 -> 버튼 작동
 		GameManager : 캐릭터 변경 기능 제어
-		MainCameraObjectController : 카메라가 캐릭터를 따라다님
-		PlayerInputController : 사용자가 input action 키를 누를시 작동
+		PlayerInputController : 사용자가 input action 키를 누를시 작동 & 카메라가 따라다니도록 update마다 위치값 제공
 		XY_AnimationController : animator 설정 제어
 		XY_CharacterController : Input action에서 제공하는 함수 호출 관리
 		
